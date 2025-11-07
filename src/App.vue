@@ -5,6 +5,7 @@ import AboutUs from './zems/Front/Components/Section/AboutUs.vue';
 import CtaSection from './zems/Front/Components/Section/CtaSection.vue';
 import FeatureSection from './zems/Front/Components/Section/FeatureSection.vue';
 import HeroSection from './zems/Front/Components/Section/HeroSection.vue';
+import TestimonialSection from './zems/Front/Components/Section/TestimonialSection.vue';
 import WhyChooseUs from './zems/Front/Components/Section/WhyChooseUs.vue';
 
 </script>
@@ -15,6 +16,7 @@ import WhyChooseUs from './zems/Front/Components/Section/WhyChooseUs.vue';
   <FeatureSection/>
   <AboutUs/>
   <WhyChooseUs/>
+  <TestimonialSection/>
   <CtaSection/>
   <FooterSection/>
 </template>
