@@ -6,8 +6,8 @@ defineProps({
 })
 </script>
 <template>
-  <div class="why-choose-card relative all-4">
-    <BaseImage :image="item.icon" />
+  <div class="why-choose-card relative medium-4">
+    <BaseImage class="mb-1" :image="item.icon" />
     <div class="card-content span-3">
       <SubTitle>{{ item.title }}</SubTitle>
       <BaseParagraph>{{ item.description }}</BaseParagraph>

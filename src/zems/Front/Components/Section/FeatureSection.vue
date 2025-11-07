@@ -47,7 +47,7 @@ const features = ref([
       <SectionTitle class="text-center mb-3" title="Built For Every Journey"
         subTitle="Precision engineering meets everyday functionality." />
 
-      <div class="medium-2 large-4 gap-2">
+      <div class="medium-2 large-4 gap-1">
         <div v-for="(item, i) in features" :key="i" class="feature-card">
           <i :class="item.icon" class="fa-2x mb-1"></i>
           <BaseTitle>{{ item.title }}</BaseTitle>

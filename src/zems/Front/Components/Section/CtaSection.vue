@@ -11,6 +11,7 @@
 .cta {
   padding: 8rem 0;
   text-align: center;
+  color: var(--white-color);
 }
 .cta .btn {
   color: var(--dark-color);
