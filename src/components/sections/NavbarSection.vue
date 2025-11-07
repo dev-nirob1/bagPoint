@@ -54,12 +54,12 @@ const handleHamburger = () => {
 
 <style scoped>
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   padding: .75rem 0;
   color: var(--white-color);
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  backdrop-filter: blur(50px);
+  background: var(--primary-color);
 }
 
 .container {
@@ -76,7 +76,7 @@ const handleHamburger = () => {
 }
 
 .nav-links {
-  background: var(--white-color);
+  background: var(--primary-color);
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ const handleHamburger = () => {
 .hamburger {
   height: 2rem;
   width: 2rem;
-  background: var(--white-color);
+  color: var(--white-color);
 }
 
 

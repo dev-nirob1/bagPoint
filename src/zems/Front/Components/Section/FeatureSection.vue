@@ -66,17 +66,13 @@ const features = ref([
 
 .feature-card {
   position: relative;
-  padding: 1.5rem;
+  padding: 2.5rem;
   box-shadow: var(--box-shadow);
   color: var(--white-color);
   border-radius: .75rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .3))
-}
-
-.feature-card:nth-child(1) {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-  place-content: center;
+  cursor: pointer;
+  overflow:hidden;
+  background: linear-gradient(to bottom, rgb(from var(--dark-color)r g b / 25%), rgb(from var(--dark-color)r g b / 25%))
 }
 
 .feature-card img {
@@ -86,5 +82,22 @@ const features = ref([
   height: 100%;
   z-index: -1;
   border-radius: .75rem;
+  transition: all .5s ease-in-out;
+}
+.feature-card:hover img{
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+
+  .feature-card:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    place-content: center;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
 }
 </style>

@@ -17,10 +17,13 @@ defineProps({
 <style>
 .why-choose-card {
   padding: 2.5rem 1.5rem;
+  background: var(--white-color);
   box-shadow: var(--box-shadow);
   border-radius: .75rem;
 }
-
+.why-choose-card p {
+  margin: .5rem 0 0 0;
+}
 .why-choose-card img {
   height: 60px;
   width: 60px;

@@ -12,7 +12,7 @@ import WhyChooseUs from './zems/Front/Components/Section/WhyChooseUs.vue';
   <NavbarSection/>
   <HeroSection/>
   <FeatureSection/>
-  <AboutUs/>
+  <!-- <AboutUs/> -->
   <WhyChooseUs/>
   <FooterSection/>
 </template>

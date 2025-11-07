@@ -33,7 +33,7 @@ const whyChooseUs = ref([
 </script>
 
 <template>
-  <section class="why-choose-us">
+  <section class="why-choose-us bg-light">
     <div class="container">
       <div class="medium-2 large-3 gap-2">
         <SectionTitle class="py-1" title="Why Choose BagPoint?"
