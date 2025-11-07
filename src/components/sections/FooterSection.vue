@@ -9,10 +9,33 @@
         </a>
 
         <BaseParagraph>
-          We connect buyers and sellers with trusted real estate solutions.
-          From dream homes to investment.
+          we craft premium travel and everyday bags that blend comfort, durability, and style — designed for explorers,
+          commuters, and dreamers alike.
         </BaseParagraph>
 
+      </div>
+
+      <!-- Quick navigation links -->
+      <div>
+        <SubTitle>Contact Us</SubTitle>
+        <ul class="footer-links">
+          <ListItem>
+            <i class="fa-solid fa-location-dot"></i> <span>BagPoint HQ, Dhaka 1216, Bangladesh</span>
+          </ListItem>
+          <ListItem>
+            <i class="fa-solid fa-phone"></i> +8801234567890
+          </ListItem>
+          <ListItem>
+            <i class="fa-solid fa-envelope"></i> support@bagpoint.com
+          </ListItem>
+        </ul>
+
+      </div>
+
+
+      <!-- Newsletter section -->
+      <div class="social">
+        <SubTitle>Follow Us On</SubTitle>
         <div class="social-links">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-facebook-f"></i>
@@ -24,42 +47,13 @@
             <i class="fab fa-whatsapp"></i>
           </a>
         </div>
-
-      </div>
-
-      <!-- Quick navigation links -->
-      <div>
-        <SubTitle>Contact Us</SubTitle>
-        <ul class="footer-links">
-          <ListItem>
-            <i class="fa-solid fa-location-dot"></i> 123 Business Centre London SW1A 1AA
-          </ListItem>
-          <ListItem>
-            <i class="fa-solid fa-phone"></i> +8801234567890
-          </ListItem>
-          <ListItem>
-            <i class="fa-solid fa-envelope"></i> realestate@gmail.com
-          </ListItem>
-        </ul>
-      </div>
-
-
-      <!-- Newsletter section -->
-      <div class="newsletter">
-        <SubTitle>Newsletter</SubTitle>
-        <BaseParagraph>
-          Subscribe to get the latest property updates, offers, and real estate insights.
-        </BaseParagraph>
-        <form class="newsletter-form">
-          <InputField type="email" placeholder="Enter your email" required />
-          <BaseButton type="submit"><i class="fa-solid fa-paper-plane"></i></BaseButton>
-        </form>
+        <BaseParagraph>Stay connected for new arrivals, style tips, and exclusive offers.</BaseParagraph>
       </div>
     </div>
 
     <!-- Footer bottom copyright -->
     <div class="footer-bottom">
-      <BaseParagraph>{{ new Date().getFullYear() }} &copy; All rights reserved by RealEstate, Bangladesh
+      <BaseParagraph> &copy; {{ new Date().getFullYear() }} BagPoint. All rights reserved.
       </BaseParagraph>
     </div>
   </footer>
@@ -95,16 +89,6 @@
   position: relative;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-}
-
-.footer .sub-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 50px;
-  background: var(--secondary-color);
 }
 
 .footer ul li {
@@ -155,13 +139,15 @@
   border-radius: 0 .25rem .25rem 0;
   margin: 0;
 }
-.footer .newsletter-form .btn i{
+
+.footer .newsletter-form .btn i {
   color: var(--white-color);
 }
 
 .footer-bottom {
   text-align: center;
   padding: .75rem;
+  font-size: 14px;
   border-top: 1px solid rgb(from var(--border-color) r g b / 40%);
 }
 </style>
