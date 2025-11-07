@@ -1,6 +1,6 @@
 <template>
   <section class="hero relative">
-    <div class="medium-2 gap-2 align-center container">
+    <div class="container">
       <div class="content">
         <HeroTitle>Carry Smart. Look Sharp.
         </HeroTitle>
@@ -13,7 +13,12 @@
       </div>
 
       <div class="image">
-        <BaseImage image="/hero.jpg"></BaseImage>
+        <!-- <BaseImage
+          image="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873">
+        </BaseImage> -->
+        <!-- <BaseImage
+          image="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873">
+        </BaseImage> -->
       </div>
     </div>
   </section>
@@ -23,25 +28,22 @@
 .hero {
   min-height: 100vh;
   color: var(--white-color);
+  background: linear-gradient(to right, rgba(0,0,0, .3), rgba(0,0,0, .2)), url('https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873') center / cover no-repeat;
 }
-
-.hero::before,
-.hero::after {
-  content: '';
-  position: absolute;
-  width: 50%;
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   height: 100%;
-  top: 0;
+  width: 100%;
+  padding-top: 12rem;
+}
+.hero .content {
+  max-width: 50%;
+}
+.hero .image img{
+  position: absolute;
+  inset: 0;
   z-index: -1;
-}
-
-.hero::before {
-  left: 0;
-  background: var(--secondary-color);
-}
-
-.hero::after {
-  right: 0;
-  background: var(--white-color);
 }
 </style>
