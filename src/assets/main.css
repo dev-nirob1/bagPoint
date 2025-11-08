@@ -67,6 +67,9 @@ h5 {
 h6 {
   font-size: var(--heading-6);
 }
+p{
+  font-size: 1.1rem;
+}
 .hero-title {
   font-size: var(--heading-1);
 }

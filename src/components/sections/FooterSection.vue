@@ -147,7 +147,10 @@
 .footer-bottom {
   text-align: center;
   padding: .75rem;
-  font-size: 14px;
   border-top: 1px solid rgb(from var(--border-color) r g b / 40%);
+}
+
+.footer-bottom p {
+  font-size: 14px;
 }
 </style>
