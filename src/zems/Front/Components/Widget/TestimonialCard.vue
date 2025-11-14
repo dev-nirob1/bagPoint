@@ -31,6 +31,7 @@ defineProps({
 .testimonial-card {
   border-radius: .75rem;
   padding: 2rem 1.5rem;
+  font-size: 1.1rem;
   background: var(--white-color);
   border: 1px solid var(--border-color);
   flex: 0 0 100%;

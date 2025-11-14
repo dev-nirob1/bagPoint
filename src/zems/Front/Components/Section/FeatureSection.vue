@@ -68,11 +68,11 @@ const features = ref([
   position: relative;
   padding: 2.5rem;
   box-shadow: var(--box-shadow);
-  color: var(--white-color);
+  color: rgb(from var(--white-color) r g b / 90%);
   border-radius: .75rem;
   cursor: pointer;
   overflow:hidden;
-  background: linear-gradient(to bottom, rgb(from var(--dark-color)r g b / 25%), rgb(from var(--dark-color)r g b / 25%))
+  background: linear-gradient(to bottom, rgb(from var(--dark-color)r g b / 60%), rgb(from var(--dark-color)r g b / 60%))
 }
 
 .feature-card img {

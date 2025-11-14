@@ -37,10 +37,10 @@ const handleHamburger = () => {
           <ListItem>
             <a href="#contact">Contact</a>
           </ListItem>
-          <ListItem>
-            <BaseButton class="bg-secondary">Buy Now</BaseButton>
-          </ListItem>
         </ul>
+        <div>
+          <BaseButton class="">Buy Now</BaseButton>
+        </div>
 
 
         <div @click="handleHamburger" class="hamburger flex-center">
@@ -105,7 +105,15 @@ const handleHamburger = () => {
   color: var(--white-color);
 }
 
-
+.btn {
+  border: 1px solid var(--white-color);
+  background: transparent;
+  padding: .75rem 1.5rem;
+}
+.btn:hover {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+}
 @media (min-width: 768px) {
 
   .hamburger,

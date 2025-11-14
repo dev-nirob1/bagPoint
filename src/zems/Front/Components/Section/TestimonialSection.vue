@@ -80,8 +80,8 @@ const testimonials = [
       </div>
 
       <div class="flex justify-center gap-1">
-        <BaseButton class="prev"><i class="fa-solid fa-arrow-left"></i></BaseButton>
-        <BaseButton class="next"><i class="fa-solid fa-arrow-right"></i></BaseButton>
+        <BaseButton class="prev"><i class="fa-solid fa-arrow-left"></i> Prev</BaseButton>
+        <BaseButton class="next">Next <i class="fa-solid fa-arrow-right"></i></BaseButton>
       </div>
     </div>
   </section>
@@ -105,17 +105,14 @@ const testimonials = [
   background: var(--white-color);
   border: 1px solid var(--border-color);
   color: var(--light-color);
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  padding: 0;
+  padding: .75rem 1rem;
 }
 
 .next:hover,
 .prev:hover {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--white-color);
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
 }
 
 .next {
