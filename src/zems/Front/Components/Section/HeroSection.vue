@@ -1,24 +1,20 @@
 <template>
-  <section class="hero relative">
+  <section class="hero relative flex-center">
+    <div class="overlay"></div>
     <div class="container">
-      <div class="content">
-        <HeroTitle>Carry Smart. Look Sharp.
-        </HeroTitle>
-        <BaseParagraph>BagPoint school backpacks are designed for students who want style, comfort, and durability.
-          Organize your books, laptop, and essentials with ease — wherever you go.</BaseParagraph>
-        <div class="flex gap-1">
-          <BaseButton class="bg-secondary">Learn More</BaseButton>
-          <BaseButton class="outline-btn">Buy Now</BaseButton>
+      <div class="medium-2 gap-2">
+        <div class="content">
+          <HeroTitle>Meet BagPoint - <br>Your Everyday Backpack.</HeroTitle>
+          <BaseParagraph>The perfect balance of comfort, style, and durability.
+            Designed to carry everything you need, without slowing you down.</BaseParagraph>
+          <div class="flex gap-1">
+            <BaseButton class="bg-secondary">Learn More</BaseButton>
+            <BaseButton class="outline-btn">Buy Now</BaseButton>
+          </div>
         </div>
-      </div>
-
-      <div class="image">
-        <!-- <BaseImage
-          image="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873">
-        </BaseImage> -->
-        <!-- <BaseImage
-          image="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873">
-        </BaseImage> -->
+        <div class="image">
+          <BaseImage image="/hero.png" />
+        </div>
       </div>
     </div>
   </section>
@@ -28,26 +24,45 @@
 .hero {
   min-height: 100vh;
   color: var(--white-color);
-  background: linear-gradient(to right, rgb(from var(--primary-color)r g b / 5%), rgb(from var(--primary-color)r g b / 5%)), url('https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=873') center / cover no-repeat;
+  background: var(--primary-color);
+  z-index: 0;
 }
 
-.hero .container {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 100%;
-  width: 100%;
-  padding-top: 12rem;
+.hero p {
+  font-size: 1.15rem;
 }
 
-.hero .content {
-  max-width: 50%;
+.outline-btn {
+  color: var(--white-color);
+  border-color: var(--white-color);
 }
 
-.hero .image img {
+.outline-btn:hover {
+  border-color: var(--secondary-color);
+}
+
+.overlay {
+  background: var(--white-color);
   position: absolute;
-  inset: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  width: 80%;
+  border-top-left-radius: 100%;
   z-index: -1;
 }
 
+@media(min-width: 768px) {
+  .overlay {
+    width: 50%;
+    height: 80%;
+  }
+}
+
+@media(min-width: 992px) {
+  .overlay {
+    width: 50%;
+    height: 90%;
+  }
+}
 </style>
