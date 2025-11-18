@@ -1,25 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-
-const items = ref([
-  {
-    icon: 'fa-laptop-code',
-    value: 1200,
-    title: 'Bags Sold',
-  },
-  {
-    icon: 'fa-user-tie',
-    value: 350,
-    title: 'Happy Customers',
-  },
-  {
-    icon: 'fa-award',
-    value: 5,
-    title: 'Awards Won',
-  }
-])
-</script>
-
 <template>
   <section class="about bg-light">
     <div class="container">
@@ -28,15 +6,6 @@ const items = ref([
           <HeroTitle>The Story Behind BackPoint</HeroTitle>
           <BaseParagraph>We Crafted This Backpack From The Raw Need Of Modern Travelers. Every Stitch Tells a Story Of
             Resilence, Every Pocket a Testament To Thoughtful Design</BaseParagraph>
-          <ul class="medium-2 larger-3 gap-1 stats-content">
-            <ListItem v-for="(value, i) in items" :key="i">
-              <i :class="`fa-solid ${value.icon} fa-2x`"></i>
-              <div>
-                <SubTitle>{{ value.value }}+</SubTitle>
-                <BaseParagraph>{{ value.title }}</BaseParagraph>
-              </div>
-            </ListItem>
-          </ul>
           <div class="flex gap-1 mt-2">
             <BaseButton class="bg-secondary">Learn More</BaseButton>
             <BaseButton class="outline-btn">Watch Video</BaseButton>
@@ -59,23 +28,4 @@ const items = ref([
   border-radius: .75rem;
 }
 
-/* stats  */
-.stats-content li {
-  padding: 1rem;
-  border-radius: .5rem;
-  background-color: var(--white-color);
-  box-shadow: var(--box-shadow);
-}
-
-.stats-content i {
-  color: var(--secondary-color);
-}
-.stats-content .sub-title {
-  margin: .5rem 0;
-}
-
-.stats-content p {
-  margin: 0;
-  padding: 0;
-}
 </style>

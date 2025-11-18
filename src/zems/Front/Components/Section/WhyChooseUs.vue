@@ -11,24 +11,28 @@ const whyChooseUs = ref([
   {
     title: "All-Day Comfort",
     description: "Ergonomic, cushioned straps designed to reduce shoulder strain during long days.",
-    image: "https://images.unsplash.com/photo-1582461410486-b0efba6e15c8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "https://images.unsplash.com/photo-1681334921939-02af23b28b81?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     title: "Smart Organization",
     description: "Dedicated compartments for your laptop, books, accessories, and bottles.",
     image: "https://images.unsplash.com/photo-1623137433874-9bdf8eb442bc?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    // image: "https://images.unsplash.com/photo-1521411086197-4f459beee413?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
-  {
-    title: "Eco-Friendly Build",
-    description: "Made using recycled materials that are safe for you—and the planet.",
-    image: "/features/eco.jpg"
-  },
+{
+  title: "Lightweight Design",
+  description: "Carry more with less effort thanks to a lightweight yet durable build.",
+  image: "https://images.unsplash.com/photo-1595724281096-bd3e2b66c86a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
   {
     title: "Modern & Stylish",
     description: "Minimalist design that fits school, travel, work, and everyday life.",
     image: "https://images.unsplash.com/photo-1681334921914-df210bc8083a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  }
+  },
+  {
+  title: "Water-Resistant Protection",
+  description: "Keeps your essentials safe from rain and accidental spills with a water-repellent exterior.",
+  image: "https://images.unsplash.com/photo-1578753557366-92159d4c8a11?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+}
 ])
 
 </script>
