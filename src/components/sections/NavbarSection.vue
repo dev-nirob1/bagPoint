@@ -24,7 +24,7 @@ const handleHamburger = () => {
         <ul class="nav-links" :class="{ 'active': isMenuOpen }">
           <ListItem class="mobile-logo">
             <a href="#" class="logo">
-              <BaseImage image="https://scionassetbd.com/uploads/brands/logo.png" alt="logo" />
+              <BaseImage image="/logo.png" alt="logo" />
             </a>
           </ListItem>
           <ListItem>
@@ -70,7 +70,7 @@ const handleHamburger = () => {
 
 .navbar .logo {
   width: auto;
-  height: 60px;
+  height: 40px;
 }
 
 .navbar .logo img {
@@ -113,8 +113,14 @@ const handleHamburger = () => {
 .outline-btn:hover{
   border-color: var(--secondary-color);
 }
+.outline-btn {
+  padding: .65rem 1rem;
+}
 @media (min-width: 768px) {
-
+.navbar .logo {
+  width: auto;
+  height: 60px;
+}
   .hamburger,
   .mobile-logo {
     display: none;
