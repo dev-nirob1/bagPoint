@@ -12,7 +12,7 @@ html {
   --body-font: 'Cabin', sans-serif;
   --heading-font: 'Quicksand', serif;
 
-  --primary-color: #7EA6CB;
+  --primary-color: #7ea6cb;
   --secondary-color: #386790;
   --white-color: #ffffff;
   --dark-color: #000000;
@@ -190,24 +190,17 @@ ul {
   transition: all 0.3s ease-in-out;
   line-height: 1;
 }
-.btn.bg-primary:hover {
+.btn.bg-secondary:hover {
   background: var(--dark-color);
 }
 .outline-btn {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-.outline-btn:hover {
-  color: var(--white-color);
-}
-.outline-btn {
-  border: 1px solid var(--white-color);
-  background: transparent;
-  padding: .75rem 1.5rem;
-}
-.outline-btn:hover {
   border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: transparent;
+}
+.outline-btn:hover {
   background: var(--secondary-color);
+  color: var(--white-color);
 }
 @media (min-width: 576px) {
   :root {
@@ -234,7 +227,6 @@ ul {
     --heading-3: 2rem;
     --heading-4: 1.75rem;
   }
-
 }
 
 @media (min-width: 1200px) {

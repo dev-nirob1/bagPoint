@@ -3,7 +3,7 @@
     <div class="cta-content">
       <BaseTitle>READY TO OWN THE PERFECT BAG</BaseTitle>
       <BaseParagraph>One back pack that adapts to your lifestyle, built for performance and comfort</BaseParagraph>
-      <BaseButton class="bg-white">Buy Now</BaseButton>
+      <BaseButton class="outline-btn">Buy Now</BaseButton>
     </div>
   </section>
 </template>
@@ -13,8 +13,11 @@
   text-align: center;
   color: var(--white-color);
 }
-.cta .btn {
-  color: var(--dark-color);
+.outline-btn {
   background: var(--white-color);
 }
+.outline-btn:hover {
+  background: var(--dark-color);
+}
+
 </style>

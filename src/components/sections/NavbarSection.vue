@@ -104,7 +104,13 @@ const handleHamburger = () => {
   width: 2rem;
   color: var(--white-color);
 }
-
+.outline-btn{
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+.outline-btn:hover{
+  border-color: var(--secondary-color);
+}
 @media (min-width: 768px) {
 
   .hamburger,

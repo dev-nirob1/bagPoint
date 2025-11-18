@@ -7,7 +7,7 @@
         <BaseParagraph>BagPoint school backpacks are designed for students who want style, comfort, and durability.
           Organize your books, laptop, and essentials with ease — wherever you go.</BaseParagraph>
         <div class="flex gap-1">
-          <BaseButton class="bg-primary">Learn More</BaseButton>
+          <BaseButton class="bg-secondary">Learn More</BaseButton>
           <BaseButton class="outline-btn">Buy Now</BaseButton>
         </div>
       </div>
