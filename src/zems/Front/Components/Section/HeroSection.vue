@@ -33,13 +33,10 @@ defineProps({
 <style scoped>
 .hero {
   min-height: 100vh;
+  padding: 4rem 0;
   color: var(--white-color);
   background: var(--primary-color);
   z-index: 0;
-}
-
-.hero p {
-  font-size: 1.15rem;
 }
 
 .outline-btn {
@@ -66,6 +63,10 @@ defineProps({
   .overlay {
     width: 50%;
     height: 80%;
+  }
+
+  .hero p {
+    font-size: 1.15rem;
   }
 }
 
