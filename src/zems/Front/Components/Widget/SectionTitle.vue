@@ -17,4 +17,5 @@ defineProps({
 <style>
 .section-title p{
   margin: .5rem 0;
+  font-size:1.1rem;
 }</style>
