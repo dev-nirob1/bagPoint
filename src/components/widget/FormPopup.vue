@@ -84,8 +84,10 @@ const handleSubmit = () => {
   background: var(--white-color);
   padding: 2rem 0;
 }
+
 .modal-content::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 form {
@@ -98,6 +100,7 @@ form input {
   padding: 1rem;
   border-radius: 1.5rem;
 }
+
 select {
   border-radius: 1.5rem;
 }
@@ -116,6 +119,7 @@ select {
   display: grid;
   place-content: center;
 }
+
 @media (min-width: 768px) {
   .modal-content {
     height: 80vh;

@@ -14,52 +14,37 @@ import SectionTitle from '../Widget/SectionTitle.vue';
         <div class="content">
           <SectionTitle title="Ready for Work, Travel, and Beyond"
             subTitle="Presicion-engineered materials selected for durability and performance. Designed to withstand the rigors of travel." />
-          <ul class="small-2 large-3 gap-1 mt-2">
+
+          <ul class="small-2 large-2 gap-1 mt-2">
             <ListItem>
               <i class="fas fa-weight-hanging"></i>
               <div>
-                <SubTitle>Weight</SubTitle>
-                <p>1.2 kg — lightweight yet durable build</p>
+                <SubTitle>Lightweight</SubTitle>
+                <p>Only 1.2 kg — easy to carry.</p>
               </div>
             </ListItem>
 
             <ListItem>
               <i class="fas fa-laptop"></i>
               <div>
-                <SubTitle>Laptop Compartment</SubTitle>
-                <p>Fits up to 16” laptop securely</p>
+                <SubTitle>Laptop Safe</SubTitle>
+                <p>Fits up to 16” securely.</p>
               </div>
             </ListItem>
 
             <ListItem>
               <i class="fas fa-water"></i>
               <div>
-                <SubTitle>Water Resistance</SubTitle>
-                <p>Premium waterproof nylon fabric</p>
+                <SubTitle>Waterproof</SubTitle>
+                <p>Premium water-resistant fabric.</p>
               </div>
             </ListItem>
 
             <ListItem>
               <i class="fas fa-cubes"></i>
               <div>
-                <SubTitle>Capacity</SubTitle>
-                <p>28L spacious interior for daily essentials</p>
-              </div>
-            </ListItem>
-
-            <ListItem>
-              <i class="fas fa-lock"></i>
-              <div>
-                <SubTitle>Security</SubTitle>
-                <p>Hidden anti-theft pocket for valuables</p>
-              </div>
-            </ListItem>
-
-            <ListItem>
-              <i class="fas fa-leaf"></i>
-              <div>
-                <SubTitle>Material</SubTitle>
-                <p>Recycled eco-friendly nylon fabric</p>
+                <SubTitle>Spacious</SubTitle>
+                <p>28L room for daily essentials.</p>
               </div>
             </ListItem>
           </ul>
@@ -90,9 +75,14 @@ import SectionTitle from '../Widget/SectionTitle.vue';
   margin: .5rem 0;
 }
 
+.specification li .sub-title {
+  margin: 1rem 0 .25rem 0;
+}
+
 .specification li p {
-  margin: .25rem 0 0 0;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
 }
 
 .specification li i {

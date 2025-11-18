@@ -12,7 +12,7 @@ defineProps({
 <template>
   <section id="about" class="about bg-light">
     <div class="container">
-      <div class="medium-2 align-center gap-2">
+      <div class="medium-2 gap-2">
         <div class="content">
           <HeroTitle>The Story Behind BackPoint</HeroTitle>
           <BaseParagraph>We Crafted This Backpack From The Raw Need Of Modern Travelers. Every Stitch Tells a Story Of
@@ -22,9 +22,23 @@ defineProps({
             <BaseButton @click="handleOpenFormModal" class="outline-btn">Buy Now</BaseButton>
           </div>
         </div>
-        <div class="image">
-          <BaseImage
-            image="https://images.unsplash.com/photo-1528921581519-52b9d779df2b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=688" />
+        <div class="medium-2 gap-1">
+          <div class="image">
+            <BaseImage
+              image="https://images.unsplash.com/photo-1521411086197-4f459beee413?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          </div>
+          <div class="image">
+            <BaseImage
+              image="https://images.unsplash.com/photo-1597800811995-7c5c236a1ba6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          </div>
+          <div class="image">
+            <BaseImage
+              image="https://images.unsplash.com/photo-1754124183074-694e8e096476?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          </div>
+          <div class="image">
+            <BaseImage
+              image="https://images.unsplash.com/photo-1624292981551-e3aa15c0056d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxiYWNrcGFjayUyMHBhZGRlZCUyMHN0cmFwc3xlbnwwfHwwfHx8MA%3D%3D" />
+          </div>
         </div>
       </div>
     </div>
@@ -37,6 +51,11 @@ defineProps({
 
 .about p {
   font-size: 1.1rem;
+}
+
+.image {
+  max-height: 280px;
+  height: 100%;
 }
 
 .about .image img {
