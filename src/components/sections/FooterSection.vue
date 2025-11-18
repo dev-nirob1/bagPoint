@@ -61,8 +61,8 @@
 
 <style scoped>
 .footer {
-  color: rgb(from var(--white-color)r g b / 90%);
-  background: var(--dark-color);
+  background: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .footer .logo img {

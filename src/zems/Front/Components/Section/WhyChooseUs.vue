@@ -2,44 +2,45 @@
 import { ref } from 'vue';
 import SectionTitle from '../Widget/SectionTitle.vue';
 import WhyChooseCard from '../Widget/WhyChooseCard.vue';
-
 const whyChooseUs = ref([
   {
-    title: "Premium Quality",
-    description: "Our bags are made from high-quality materials to last longer and withstand daily use.",
-    icon: "https://img.icons8.com/color/48/000000/diamond.png"
+    title: "Premium Materials",
+    description: "Crafted from durable, water-resistant fabric that lasts longer and protects your essentials.",
+    image: "https://images.unsplash.com/photo-1578753557366-92159d4c8a11?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    title: "Ergonomic Design",
-    description: "Designed for comfort with padded straps and back support for all-day wear.",
-    icon: "https://img.icons8.com/color/48/000000/diamond.png"
+    title: "All-Day Comfort",
+    description: "Ergonomic, cushioned straps designed to reduce shoulder strain during long days.",
+    image: "https://images.unsplash.com/photo-1582461410486-b0efba6e15c8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    title: "Multiple Compartments",
-    description: "Keep all your essentials organized with designated compartments for laptop, books, and accessories.",
-    icon: "https://img.icons8.com/color/48/000000/backpack.png"
+    title: "Smart Organization",
+    description: "Dedicated compartments for your laptop, books, accessories, and bottles.",
+    image: "https://images.unsplash.com/photo-1623137433874-9bdf8eb442bc?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    // image: "https://images.unsplash.com/photo-1521411086197-4f459beee413?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    title: "Eco-Friendly",
-    description: "Made with sustainable materials, helping you make an environmentally conscious choice.",
-    icon: "https://img.icons8.com/color/48/000000/diamond.png"
+    title: "Eco-Friendly Build",
+    description: "Made using recycled materials that are safe for you—and the planet.",
+    image: "/features/eco.jpg"
   },
   {
-    title: "Stylish & Trendy",
-    description: "Modern designs and vibrant colors that match your style and personality.",
-    icon: "https://img.icons8.com/color/48/000000/backpack.png"
+    title: "Modern & Stylish",
+    description: "Minimalist design that fits school, travel, work, and everyday life.",
+    image: "https://images.unsplash.com/photo-1681334921914-df210bc8083a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ])
+
 </script>
 
 <template>
-  <section class="why-choose-us bg-light">
+  <section class="why-choose-us">
     <div class="container">
-      <div class="medium-2 large-3 gap-2">
-        <SectionTitle class="py-1" title="Why Choose BagPoint?"
-          subTitle="Stylish, durable, and designed for students who carry their world with them." />
+      <SectionTitle class="mb-2 text-center" title="Why Choose BagPoint?"
+        subTitle="Stylish, durable, and designed for students who carry their world with them." />
 
-        <WhyChooseCard v-for="(item, i) in whyChooseUs" :key="i" :item="item"/>
+      <div class="medium-2 large-3 gap-2">
+        <WhyChooseCard v-for="(item, i) in whyChooseUs" :key="i" :item="item" />
       </div>
     </div>
   </section>

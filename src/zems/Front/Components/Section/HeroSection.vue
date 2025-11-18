@@ -2,7 +2,7 @@
   <section class="hero relative flex-center">
     <div class="overlay"></div>
     <div class="container">
-      <div class="medium-2 gap-2">
+      <div class="medium-2 gap-2 align-center">
         <div class="content">
           <HeroTitle>Meet BagPoint - <br>Your Everyday Backpack.</HeroTitle>
           <BaseParagraph>The perfect balance of comfort, style, and durability.

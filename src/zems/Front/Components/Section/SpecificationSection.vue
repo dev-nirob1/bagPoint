@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script setup>
 import SectionTitle from '../Widget/SectionTitle.vue';
 
 </script>
 
 <template>
-  <section class="specification">
+  <section class="specification bg-light">
     <div class="container">
       <div class="medium-2 align-center gap-2">
         <div class="image">

@@ -21,7 +21,7 @@ const items = ref([
 </script>
 
 <template>
-  <section class="about">
+  <section class="about bg-light">
     <div class="container">
       <div class="medium-2 align-center gap-2">
         <div class="content">

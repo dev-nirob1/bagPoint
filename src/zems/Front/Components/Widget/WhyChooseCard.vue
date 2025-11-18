@@ -6,26 +6,26 @@ defineProps({
 })
 </script>
 <template>
-  <div class="why-choose-card relative medium-4">
-    <BaseImage class="mb-1" :image="item.icon" />
-    <div class="card-content span-3">
-      <SubTitle>{{ item.title }}</SubTitle>
-      <BaseParagraph>{{ item.description }}</BaseParagraph>
-    </div>
+  <div class="why-choose-card relative">
+    <BaseImage class="mb-1" :image="item.image" />
+    <SubTitle>{{ item.title }}</SubTitle>
+    <BaseParagraph>{{ item.description }}</BaseParagraph>
   </div>
 </template>
 <style>
 .why-choose-card {
-  padding: 2.5rem 1.5rem;
+  padding: 1rem;
   background: var(--white-color);
   box-shadow: var(--box-shadow);
   border-radius: .75rem;
 }
+
 .why-choose-card p {
   margin: .5rem 0 0 0;
 }
 .why-choose-card img {
-  height: 60px;
-  width: 60px;
+  height: 240px;
+  width: 100%;
+  border-radius: .75rem .75rem 0 0;
 }
 </style>

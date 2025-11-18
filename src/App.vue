@@ -18,8 +18,8 @@ import WhyChooseUs from './zems/Front/Components/Section/WhyChooseUs.vue';
   <AboutUs/>
   <WhyChooseUs/>
   <SpecificationSection/>
-  <TestimonialSection/>
   <CtaSection/>
+  <TestimonialSection/>
   <FooterSection/>
 </template>
 
