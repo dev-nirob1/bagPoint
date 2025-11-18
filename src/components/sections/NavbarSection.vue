@@ -13,7 +13,7 @@ const handleHamburger = () => {
     <div class="container">
       <nav class="flex justify-between align-center">
         <a href="#" class="logo">
-          <BaseImage image="https://scionassetbd.com/uploads/brands/logo.png" alt="logo" />
+          <BaseImage image="/logo.png" alt="logo" />
         </a>
 
         <ul class="nav-links" :class="{ 'active': isMenuOpen }">
