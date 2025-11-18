@@ -1,80 +1,83 @@
-<script setup lang="ts">
+<script setup>
+import { ref } from 'vue';
 import SectionTitle from '../Widget/SectionTitle.vue';
 import TestimonialCard from '../Widget/TestimonialCard.vue';
 
-const testimonials = [
+const testimonials = ref([
   {
     id: 1,
     name: "Sarah Khan",
-    role: "Homeowner",
-    review: "Buying my dream villa here was a wonderful decision. The helpful team made the entire process smooth and easy.",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+    role: "Student",
+    review: "BagPoint made my daily commute so much easier. The compartments keep everything organized and the comfort is unmatched.",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     id: 2,
     name: "Jahid Hossain",
-    role: "Investor",
-    review: "Professional service and outstanding properties. I was truly impressed with their dedication, attention to detail, and clear communication.",
-    avatar: "https://randomuser.me/api/portraits/men/45.jpg"
+    role: "Office Worker",
+    review: "I carry my laptop and documents every day, and this bag handles everything effortlessly. Smart, durable, and very stylish.",
+    avatar: "https://images.unsplash.com/photo-1620000617482-821324eb9a14?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 3,
     name: "Nabila Rahman",
-    role: "Tenant",
-    review: "I found the perfect apartment within a week. Their reliable team made renting easy, comfortable, and completely stress free.",
-    avatar: "https://randomuser.me/api/portraits/women/56.jpg"
+    role: "Traveler",
+    review: "The lightweight design and storage options are perfect for trips. It fits all my essentials without feeling heavy at all.",
+    avatar: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 4,
     name: "Imran Chowdhury",
-    role: "First-time Buyer",
-    review: "As a first-time buyer, I was nervous, but their team guided me with patience, care, and complete professionalism throughout.",
+    role: "Photographer",
+    review: "I love how secure the pockets are. My gear stays safe and the bag feels super comfortable even on long shoots.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     id: 5,
     name: "Farzana Ahmed",
-    role: "Landlord",
-    review: "They found reliable tenants for my property quickly. The process was transparent, straightforward, and I felt fully supported the whole time.",
+    role: "University Student",
+    review: "Perfect for carrying books, laptop, and accessories. The build quality feels premium and the design looks very modern.",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg"
   },
   {
     id: 6,
     name: "Rafiq Karim",
-    role: "Investor",
-    review: "Their market knowledge is outstanding. I received excellent advice, profitable opportunities, and complete confidence with my property investment decisions.",
+    role: "Tech Enthusiast",
+    review: "The laptop padding and pocket layout are excellent. Everything fits neatly and the bag still feels surprisingly light.",
     avatar: "https://randomuser.me/api/portraits/men/28.jpg"
   },
   {
     id: 7,
     name: "Maya Sultana",
-    role: "Tenant",
-    review: "Securing my rental home was quick and stress free. The friendly staff explained everything clearly and made the process enjoyable.",
+    role: "Teacher",
+    review: "I carry my books and supplies every day, and this bag handles it all with ease. Functional, clean, and very reliable.",
     avatar: "https://randomuser.me/api/portraits/women/22.jpg"
   },
   {
     id: 8,
     name: "Tanvir Alam",
-    role: "Homeowner",
-    review: "They listened to my needs carefully and matched me with the perfect home. The entire experience was smooth, professional, and reassuring.",
+    role: "Freelancer",
+    review: "Spacious, comfortable, and minimal — exactly what I needed. It organizes my work gear perfectly and feels great to use.",
     avatar: "https://randomuser.me/api/portraits/men/50.jpg"
   },
   {
     id: 9,
     name: "Samira Niaz",
-    role: "Buyer",
-    review: "I am thrilled with my new property purchase. The expert guidance and honest advice gave me peace of mind and confidence.",
+    role: "Designer",
+    review: "The clean look and sturdy material make it my favorite everyday bag. Practical, stylish, and perfect for busy days.",
     avatar: "https://randomuser.me/api/portraits/women/15.jpg"
   }
-];
+])
+
 
 </script>
 
 <template>
-  <section class="testimonials">
+  <section id="reviews" class="testimonials">
     <div class="container">
       <SectionTitle class="text-center mb-2" title="Customer Stories"
         subTitle="Real Experiences From Travelers Who Trust BagPoint" />
+
       <div class="card-slider">
         <TestimonialCard v-for="review in testimonials" :review="review" :key="review.id" />
       </div>
@@ -97,7 +100,7 @@ const testimonials = [
   gap: 2rem;
   transition: transform .5s ease-in-out;
   overflow-x: hidden;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .next,

@@ -1,3 +1,13 @@
+<script setup>
+defineProps({
+  handleOpenVideoModal: {
+    type: Function
+  },
+  handleOpenFormModal: {
+    type: Function
+  }
+})
+</script>
 <template>
   <section class="hero relative flex-center">
     <div class="overlay"></div>
@@ -8,8 +18,8 @@
           <BaseParagraph>The perfect balance of comfort, style, and durability.
             Designed to carry everything you need, without slowing you down.</BaseParagraph>
           <div class="flex gap-1">
-            <BaseButton class="bg-secondary">Learn More</BaseButton>
-            <BaseButton class="outline-btn">Buy Now</BaseButton>
+            <BaseButton @click="handleOpenVideoModal" class="bg-secondary">Learn More</BaseButton>
+            <BaseButton @click="handleOpenFormModal" class="outline-btn">Buy Now</BaseButton>
           </div>
         </div>
         <div class="image">

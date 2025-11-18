@@ -1,6 +1,11 @@
 <script setup>
 import { ref } from 'vue';
+defineProps({
 
+  handleOpenFormModal: {
+    type: Function
+  }
+})
 const isMenuOpen = ref(false);
 const handleHamburger = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -29,17 +34,14 @@ const handleHamburger = () => {
             <a href="#about">About</a>
           </ListItem>
           <ListItem>
-            <a href="#properties">Properties</a>
+            <a href="#specification">Specification</a>
           </ListItem>
           <ListItem>
-            <a href="#faq">FAQ</a>
-          </ListItem>
-          <ListItem>
-            <a href="#contact">Contact</a>
+            <a href="#reviews">Reviews</a>
           </ListItem>
         </ul>
         <div>
-          <BaseButton class="outline-btn">Buy Now</BaseButton>
+          <BaseButton @click="handleOpenFormModal" class="outline-btn">Buy Now</BaseButton>
         </div>
 
 

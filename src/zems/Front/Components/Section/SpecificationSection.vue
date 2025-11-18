@@ -4,7 +4,7 @@ import SectionTitle from '../Widget/SectionTitle.vue';
 </script>
 
 <template>
-  <section class="specification bg-light">
+  <section id="specification" class="specification bg-light">
     <div class="container">
       <div class="medium-2 align-center gap-2">
         <div class="image">
