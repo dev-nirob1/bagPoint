@@ -39,7 +39,7 @@ const handleHamburger = () => {
           </ListItem>
         </ul>
         <div>
-          <BaseButton class="">Buy Now</BaseButton>
+          <BaseButton class="outline-btn">Buy Now</BaseButton>
         </div>
 
 
@@ -105,15 +105,6 @@ const handleHamburger = () => {
   color: var(--white-color);
 }
 
-.btn {
-  border: 1px solid var(--white-color);
-  background: transparent;
-  padding: .75rem 1.5rem;
-}
-.btn:hover {
-  border: 1px solid var(--secondary-color);
-  background: var(--secondary-color);
-}
 @media (min-width: 768px) {
 
   .hamburger,

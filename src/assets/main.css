@@ -190,7 +190,25 @@ ul {
   transition: all 0.3s ease-in-out;
   line-height: 1;
 }
-
+.btn.bg-primary:hover {
+  background: var(--dark-color);
+}
+.outline-btn {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.outline-btn:hover {
+  color: var(--white-color);
+}
+.outline-btn {
+  border: 1px solid var(--white-color);
+  background: transparent;
+  padding: .75rem 1.5rem;
+}
+.outline-btn:hover {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+}
 @media (min-width: 576px) {
   :root {
     --heading-1: 2rem;

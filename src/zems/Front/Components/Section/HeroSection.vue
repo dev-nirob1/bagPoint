@@ -8,7 +8,7 @@
           Organize your books, laptop, and essentials with ease — wherever you go.</BaseParagraph>
         <div class="flex gap-1">
           <BaseButton class="bg-primary">Learn More</BaseButton>
-          <BaseButton class="bg-dark">Buy Now</BaseButton>
+          <BaseButton class="outline-btn">Buy Now</BaseButton>
         </div>
       </div>
 
@@ -49,4 +49,5 @@
   inset: 0;
   z-index: -1;
 }
+
 </style>
