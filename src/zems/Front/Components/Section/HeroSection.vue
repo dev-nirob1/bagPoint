@@ -33,7 +33,7 @@ defineProps({
 <style scoped>
 .hero {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem 0;
   color: var(--white-color);
   background: var(--primary-color);
   z-index: 0;
