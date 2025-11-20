@@ -9,11 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --body-font: 'Cabin', sans-serif;
-  --heading-font: 'Quicksand', serif;
+  --body-font:  sans-serif;
+  --heading-font: sans-serif;
 
-  --primary-color: #7ea6cb;
-  --secondary-color: #386790;
+  /* --primary-color: #7ea6cb; */
+  --primary-color: #017778;
+  /* --secondary-color: #386790; */
+  --secondary-color: #024444;
   --white-color: #ffffff;
   --dark-color: #000000;
   --light-color: #6c757d;

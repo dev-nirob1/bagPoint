@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="cta bg-secondary flex-center">
+  <section class="cta bg-primary flex-center">
     <div class="cta-content">
       <BaseTitle>READY TO OWN THE PERFECT BAG</BaseTitle>
       <BaseParagraph>One back pack that adapts to your lifestyle, built for performance and comfort</BaseParagraph>
