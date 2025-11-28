@@ -41,7 +41,7 @@ const handleHamburger = () => {
           </ListItem>
         </ul>
         <div>
-          <BaseButton @click="handleOpenFormModal" class="outline-btn">Buy Now</BaseButton>
+          <BaseButton @click="handleOpenFormModal" class="bg-secondary">Buy Now</BaseButton>
         </div>
 
 
@@ -100,21 +100,20 @@ const handleHamburger = () => {
   display: inline-block;
   padding: .5rem 1rem;
 }
+.nav-links a:hover{
+  color: var(--secondary-color);
+}
 
 .hamburger {
   height: 2rem;
   width: 2rem;
   color: var(--white-color);
 }
-.outline-btn{
-  color: var(--white-color);
-  border-color: var(--white-color);
+.btn.bg-secondary{
+  color: var(--dark-color);
 }
-.outline-btn:hover{
-  border-color: var(--secondary-color);
-}
-.outline-btn {
-  padding: .65rem 1rem;
+.btn.bg-secondary:hover{
+  color: var(--secondary-color);
 }
 @media (min-width: 768px) {
 .navbar .logo {

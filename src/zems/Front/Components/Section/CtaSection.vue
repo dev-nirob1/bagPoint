@@ -11,7 +11,7 @@ defineProps({
     <div class="cta-content">
       <BaseTitle>READY TO OWN THE PERFECT BAG</BaseTitle>
       <BaseParagraph>One back pack that adapts to your lifestyle, built for performance and comfort</BaseParagraph>
-      <BaseButton @click="handleOpenFormModal"  class="outline-btn">Buy Now</BaseButton>
+      <BaseButton @click="handleOpenFormModal" class="bg-secondary">Buy Now</BaseButton>
     </div>
   </section>
 </template>
@@ -22,10 +22,11 @@ defineProps({
   color: var(--white-color);
 }
 .outline-btn {
-  background: var(--white-color);
+  background: var(--dark-color);
+
 }
 .outline-btn:hover {
-  background: var(--dark-color);
+  background: var(--transparent-color);
 }
 
 </style>

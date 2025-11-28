@@ -53,7 +53,7 @@
 
     <!-- Footer bottom copyright -->
     <div class="footer-bottom">
-      <BaseParagraph> &copy; {{ new Date().getFullYear() }} BagPoint. All rights reserved.
+      <BaseParagraph> &copy; {{ new Date().getFullYear() }} BagPoint. Design and Developed by <a class="text-secondary" href="https://webpoka.com/" target="_blank">Webpoka</a>.
       </BaseParagraph>
     </div>
   </footer>
@@ -61,7 +61,7 @@
 
 <style scoped>
 .footer {
-  background: var(--primary-color);
+  background: var(--dark-color);
   color: var(--white-color);
 }
 
@@ -80,9 +80,11 @@
 .footer .social-links a {
   border-radius: .25rem;
   background: var(--white-color);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 0 .75rem;
-  /* border: 1px solid var(--border-color); */
+}
+.footer .social-links a:hover{
+  color: var(--secondary-color);
 }
 
 .footer .sub-title {

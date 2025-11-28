@@ -12,14 +12,21 @@ defineProps({
 <template>
   <section id="about" class="about bg-light">
     <div class="container">
-      <div class="medium-2 gap-2">
+      <div class="medium-2 align-center gap-2">
         <div class="content">
           <HeroTitle>The Story Behind BackPoint</HeroTitle>
-          <BaseParagraph>We Crafted This Backpack From The Raw Need Of Modern Travelers. Every Stitch Tells a Story Of
-            Resilence, Every Pocket a Testament To Thoughtful Design</BaseParagraph>
+          <BaseParagraph>
+            We Crafted This Backpack From The Raw Need Of Modern Travelers. Every Stitch Tells a Story Of
+            Resilence, Every Pocket a Testament To Thoughtful Design
+          </BaseParagraph>
+          <BaseParagraph>
+            Built for convenience and comfort, BackPoint adapts to your journey—whether you're navigating
+            busy streets, rushing to class, or exploring new places. It's not just a bag; it's a reliable companion
+            designed to support your everyday adventures.
+          </BaseParagraph>
           <div class="flex gap-1 mt-2">
-            <BaseButton @click="handleOpenVideoModal" class="bg-secondary">Learn More</BaseButton>
-            <BaseButton @click="handleOpenFormModal" class="outline-btn">Buy Now</BaseButton>
+            <BaseButton @click="handleOpenVideoModal" class="bg-primary">Learn More</BaseButton>
+            <BaseButton @click="handleOpenFormModal" class="bg-dark">Buy Now</BaseButton>
           </div>
         </div>
         <div class="medium-2 gap-1">
@@ -60,5 +67,15 @@ defineProps({
 
 .about .image img {
   border-radius: .75rem;
+}
+
+.about .btn.bg-primary:hover {
+  background: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+.about .btn.bg-dark:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
 }
 </style>

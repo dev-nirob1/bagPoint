@@ -7,11 +7,13 @@ defineProps({
 </script>
 <template>
   <div class="testimonial-card">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
+    <div class="text-secondary">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
     <div class="flex">
       <BaseParagraph>
         {{ review.review }}
@@ -37,10 +39,6 @@ defineProps({
   flex: 0 0 100%;
 }
 
-.testimonial-card i {
-  color: var(--primary-color);
-}
-
 .testimonial-card p {
   font-style: italic;
   margin-top: .5rem;
@@ -58,5 +56,4 @@ defineProps({
     flex: 0 0 calc(32.85% - 1rem);
   }
 }
-
 </style>

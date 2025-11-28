@@ -113,9 +113,9 @@ const testimonials = ref([
 
 .next:hover,
 .prev:hover {
-  background: var(--secondary-color);
+  background: var(--dark-color);
   color: var(--white-color);
-  border-color: var(--secondary-color);
+  border-color: var(--dark-color);
 }
 
 .next {

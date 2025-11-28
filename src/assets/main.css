@@ -12,12 +12,10 @@ html {
   --body-font:  sans-serif;
   --heading-font: sans-serif;
 
-  /* --primary-color: #7ea6cb; */
-  --primary-color: #017778;
-  /* --secondary-color: #386790; */
-  --secondary-color: #024444;
+  --primary-color: #183c28;
+  --secondary-color: #eec643;
   --white-color: #ffffff;
-  --dark-color: #000000;
+  --dark-color: #040f04;
   --light-color: #6c757d;
   --border-color: #dee2e6;
   --body-bg: #ffff;
@@ -192,12 +190,15 @@ ul {
   transition: all 0.3s ease-in-out;
   line-height: 1;
 }
+.btn.bg-secondary{
+  color: var(--dark-color);
+}
 .btn.bg-secondary:hover {
+  color: var(--white-color);
   background: var(--dark-color);
 }
 .outline-btn {
-  border: 1px solid var(--secondary-color);
-  color: var(--secondary-color);
+  border: 1px solid ;
   background: transparent;
 }
 .outline-btn:hover {
